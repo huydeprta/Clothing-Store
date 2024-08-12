@@ -1,0 +1,138 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  height: 98vh;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Quicksand";
+  box-shadow: 10px 10px 50px grey;
+}
+
+.form .form-detail {
+  width: 50%;
+}
+
+.form .form-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 90vh;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  background-image: url("../img/n7.jpg");
+  background-size: cover;
+  backdrop-filter: brightness(0.5);
+}
+
+.box {
+    width: 80%;
+}
+
+.st0 {
+    fill: transparent;
+    stroke: #f5b718;
+    stroke-width: 3; /* Kích thước của đường viền*/
+    stroke-dasharray: 416;
+    stroke-dashoffset: 0;
+    animation: effectText 5s ease-in-out infinite alternate;
+  }
+  
+
+
+@keyframes effectText{
+    from {
+        fill: transparent;
+        stroke-dashoffset: 416;
+    }to {
+        fill: #f5b718;
+        stroke-dashoffset: 0;
+    }
+}
+
+#welcomeMessage {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.field,
+#contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm {
+  max-width: 320px;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.field {
+  gap: 12px;
+}
+
+.field:nth-last-child(1) {
+  margin-top: 32px;
+  gap: 24px;
+}
+
+.field:nth-last-child(1) input {
+  height: 50px;
+  background-color: #3772ff;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Quicksand";
+  cursor: pointer;
+}
+
+.field:nth-last-child(1) input:hover {
+  background-color: #004cff;
+}
+
+#checkemail,
+#checkpass1,
+#checkpass2 {
+  position: relative;
+  color: red;
+  font-size: 14px;
+}
+
+#overlay {
+  padding: 16px;
+  margin: 16px;
+}
+
+#text {
+  text-align: center;
+  height: 220px;
+}
+
+#text input {
+  text-align: center;
+  cursor: pointer;
+  /* padding: 16px; */
+}
+
+#checkemail:active {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+form .name-phone input,
+form input {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+

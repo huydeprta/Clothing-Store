@@ -1,0 +1,132 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    color: #000;
+}
+
+.form-detail table {
+    border-radius: 10px !important;
+    width: 80vw;
+}
+
+th {
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+}
+
+td a {
+    margin-right: 10px;
+}
+
+td i.fa-pen-to-square {
+    color: #004cff;
+}
+
+td i.fa-trash{
+    color: red;
+}
+
+td>img {
+    width: 100px;
+}
+
+.field {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.field img {
+    width: 100px;
+}
+
+.field #field{
+    background-color: #004cff;    
+    color: #fff;
+}
+
+.field:nth-last-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+.up-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.field .error{
+    color: red;
+}
+
+.field .success{
+    color: #55b847;
+}
+
+.form-categories, table , .form-product{
+    background-color: #eeeeee;
+    padding: 32px 16px;
+    border-radius: 10px;
+    
+}
+
+label {            
+    /* text-align: left; */
+    line-height: 46px;
+    width: 20vw;
+}
+
+input {
+    display: block;
+    margin: 12px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 40px;
+}
+
+button {
+    margin: 0 auto;
+    width: 100px;
+    padding: 8px 0;
+    background-color: #004cff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.errol {
+    color: red;
+    font-weight: bold;
+}
+
+#select {
+    border-radius: 10px;
+    width: 60vw;
+    height: 40px;
+    margin-bottom: 10px;
+}

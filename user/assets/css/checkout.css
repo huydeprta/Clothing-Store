@@ -1,0 +1,167 @@
+.checkout-cart,
+.checkout-quantity {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 16px;
+  width: 100%;
+}
+
+.my-cart {
+  width: 400px !important;
+}
+
+.checkout-cart .checkout-img {
+  width: 110px;
+}
+
+.checkout-img img {
+  width: 100%;
+}
+
+.checkout-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checkout-info p {
+  font-size: 16px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.checkout-quantity {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-quantity > p {
+  color: #ff0000;
+}
+
+.cart-detail p {
+  margin-bottom: 16px;
+}
+
+.cart-detail form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+form .name-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+form .name-phone input,
+form input {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+.btn-pay {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.btn-pay button {
+  position: relative;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-pay button:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -5px;
+  background-image: linear-gradient(to right top, #2979ff, #07a787);
+  border-radius: inherit;
+}
+
+.btn-pay button:focus {
+  border: 1px solid #ccc;
+}
+
+button img {
+  width: 40px;
+}
+
+.a-textarea textarea {
+  height: 200px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 400px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+#text i {
+  color: #2979ff;
+}
+
+#text p {
+  color: #000;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  color: white;
+  transform: translate(-50%, -50%);
+  border: none;
+  -ms-transform: translate(-50%, -50%);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.check {
+  font-size: 100px !important;
+  margin-top: 10px;
+  color: #5275e6;
+  text-align: center;
+}

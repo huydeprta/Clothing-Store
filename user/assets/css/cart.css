@@ -1,0 +1,212 @@
+/*  CSS chung */
+
+.cart-detail table,
+.my-cart,
+.cart-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-info,
+.quantity,
+.cart-detail tbody tr,
+.cart-detail thead tr,
+.cart-code-discount {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-content .cart-prince,
+.cart-discount,
+.cart-total {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*  */
+.product-container {
+  gap: 64px;
+}
+
+.cart-product {
+  width: 800px;
+}
+
+.cart-detail {
+  width: 100%;
+}
+
+.cart-product .title {
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+.cart-detail table {
+  position: relative;
+  background: #fff;
+  text-align: left;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  gap: 16px;
+}
+
+table:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -5px;
+  background-image: linear-gradient(to right top, #2979ff, #07a787);
+  border-radius: inherit;
+}
+
+.cart-detail table thead {
+  height: 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-detail thead tr th:nth-child(1) {
+  padding-left: 16px;
+}
+
+.cart-detail tbody tr {
+  border-bottom: 1px solid #ccc;
+  padding: 16px;
+  gap: 24px;
+}
+
+.cart-detail tbody tr:nth-last-child(1) {
+  border: none;
+}
+
+.cart-detail table th {
+  gap: 16px;
+}
+
+.cart-detail table th:nth-child(1),
+.cart-detail tbody td:nth-child(1) {
+  width: 60%;
+}
+
+.cart-detail table th:nth-child(2),
+.cart-detail tbody td:nth-child(2) {
+  width: 20%;
+}
+
+.cart-detail table th:nth-child(3),
+.cart-detail tbody td:nth-child(3) {
+  width: 20%;
+}
+
+.cart-info {
+  gap: 16px;
+}
+
+.cart-info .info-img {
+  width: 150px;
+}
+
+.info-img img {
+  width: 100%;
+}
+
+.quantity {
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.my-cart {
+  width: 450px;
+  margin-top: 24px;
+}
+
+.my-cart-container {
+  border: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  padding: 16px 24px;
+}
+
+.my-cart-detail {
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: #a0c3d2;
+  border-radius: 10px 10px 0 0;
+  padding: 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.my-cart .title {
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-align: right;
+}
+
+.cart-content {
+  gap: 16px;
+}
+
+.cart-total p:nth-last-child(1) {  
+  color: #fb0000;
+}
+
+.cart-code-discount {
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-code-discount input {
+  height: 50px;
+  width: 316px;
+}
+
+.cart-code-discount button {
+  height: 48px;
+  width: 120px;
+  background-color: #2979ff;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart-code-discount button:hover {
+  background-color: #004bff;
+  cursor: pointer;
+}
+
+.cart-code-discount button,
+.cart-code-discount input {
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  align-items: center;
+}
+
+.btn-oder {
+  height: 50px;
+  width: 100%;
+  background-color: #e63946;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  margin: 32px 0 16px 0;
+  transition: 0.3s;
+}
+
+.btn-oder a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-oder:hover {
+  background: #fb0000;
+}
